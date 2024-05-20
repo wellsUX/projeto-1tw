@@ -5,36 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwind Matheus</title>
     <link href="output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div style="background: url('./img/Section-hero.png') no-repeat center center; background-size: cover; height: 700px">
-        <div class="container mx-auto py-14 px-4 w-full h-full justify-center space-y-48">
-            <div class="max-w-xl place-content-center mb-6 flex justify-between">
-                <div Class="font-bold text-3xl text-gray-50">
-                    Logo
+        <div class="max-w-screen-xl container mx-auto py-20 px-4 w-full h-full justify-center space-y-48">
+            <div class="place-content-center mb-6 flex justify-between">
+                <div Class="">
+                    <img src="./img/Logotipo ALS.png" alt="logotipo als engenharia">
                 </div>
-                <ul class="space-x-4">
-                    <a href="" class="text-sm text-gray-200">Sobre nós</a>
-                    <a href="" class="text-sm text-gray-200">Serviços</a>
-                    <a href="" class="text-sm text-gray-200">Clientes</a>
-                    <a href="" class="text-sm text-gray-200">Contato</a>
+                <ul class="font-body text-base text-gray-200 space-x-12">
+                    <a href="" class="">Sobre nós</a>
+                    <div class="relative inline-block text-left">
+                        <button id="dropdownButton" class="font-body inline-flex items-center text-gray-50 hover:text-gray-100 focus:outline-none">
+                            <span>Serviços</span>
+                            <svg class="ml-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div id="dropdownMenu" class="hidden absolute mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none no-scrollbar" role="menu" aria-orientation="vertical" aria-labelledby="dropdownButton">
+                            <div class="py-1" role="none">
+                                <a href="#" class="text-gray-100 block px-4 py-2 text-sm hover:bg-gray-100" role="menuitem">Serviço 01</a>
+                                <a href="#" class="text-gray-100 block px-4 py-2 text-sm hover:bg-gray-100" role="menuitem">Serviço 02</a>
+                                <a href="#" class="text-gray-100 block px-4 py-2 text-sm hover:bg-gray-100" role="menuitem">Serviço 03</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="">Clientes</a>
+                    <a href="" class="">Contato</a>
                 </ul>
             </div>
         <div class="space-y-8">
             <div class="space-y-4">
-            <h1 class="font-bold text-5xl text-gray-50 uppercase">
+            <h1 class="font-body font-bold text-6xl text-gray-50 uppercase">
             Inovação
             </h1>
-            <h2 class="text-xl text-gray-50">
-                Foco em produtividade
+            <h2 class="font-body text-3xl text-gray-50">
+                com foco em Produtividade
             </h2>
             </div>
             <div>
-                <button type="button" class="max-w-6 px-8 py-4 bg-gray-50 justify-center rounded-full">
-                    <span class="text-blue-400 text-bold uppercase">Fale conosco!</span>
+                <button type="button" class="max-w-auto px-8 py-3 bg-gray-50 justify-center rounded-full">
+                    <span class="text-blue-600 font-body font-semibold uppercase">Fale conosco!</span>
                 </button>
             </div>
         </div>
+    <div class="max-w-screen-md mx-auto py-16 space-y-10">
+        <div>
+        <h1 class="font-body font-bold text-blue-900 text-3xl uppercase">
+            A ALS Engenharia
+        </h1>
+        <div class="my-4 border-t-4 border-blue-300 w-20"></div>
+        </div>
+        <div>
+            <p class="font-body text-lg">
+            Somos uma empresa especializada em oferecer uma ampla gama de serviços para atender às necessidades variadas de seus clientes. Nossa equipe altamente qualificada e experiente se destaca na realização de projetos mecânicos e elétricos de alta qualidade, garantindo eficiência e confiabilidade em cada etapa do processo. Além disso, destacamo-nos na área de eficiência energética, fornecendo soluções inovadoras para otimizar o consumo de energia e reduzir os custos operacionais.
+            </p>
+        </div>
+    </div>
     </div>
     </div>
 </body>
